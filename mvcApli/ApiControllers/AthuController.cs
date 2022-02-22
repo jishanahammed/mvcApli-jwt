@@ -114,6 +114,7 @@ namespace mvcApli.ApiControllers
                     var token = new JwtSecurityToken
                     (
                         issuer: configuration["AuthSetting:Audience"],
+
                         audience: configuration["AuthSetting:Audience"],
                         claims: claims,
                         expires: DateTime.Now.AddDays(30),
